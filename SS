@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arvex Auto Spa</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
+color:white;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+h1,h2,h3{
+margin:0;
+}
+
+.hero{
+text-align:center;
+padding:40px 0;
+}
+
+.hero img{
+max-width:420px;
+width:100%;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+border-radius:25px;
+margin:10px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.btn-red{
+background:red;
+color:white;
+}
+
+.btn-outline{
+border:1px solid white;
+color:white;
+}
+
+.section{
+padding:40px 0;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+flex:1;
+min-width:250px;
+background:#151515;
+padding:20px;
+border-radius:15px;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+margin:10px 0;
+}
+
+.red{
+color:red;
+font-weight:bold;
+}
+
+.center{
+text-align:center;
+}
+
+.toggle{
+position:fixed;
+top:10px;
+right:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="toggle">
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('es')">ES</button>
+</div>
+
+<!-- HERO -->
+<div class="hero container">
+<img src="YOUR_IMAGE_HERE">
+
+<h1 id="title">ARVEX AUTO SPA</h1>
+
+<p id="desc">
+Official page for Arvex Auto Spa. Modern mobile detailing and basic wash service made to keep your vehicle clean, sharp, and well cared for without leaving home, work, or the office.
+</p>
+
+<a class="btn btn-red" href="tel:4043973680">Call Now</a>
+<a class="btn btn-outline" href="#services">View Services</a>
+
+<p class="center">
+2 phone numbers<br>
+<span class="red">404-397-3680 / 910-214-3264</span>
+</p>
+
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="section container">
+<h2 class="center">SERVICES & PRICING</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>BASIC</h3>
+<p>Fast exterior refresh with light interior attention.</p>
+
+<ul>
+<li>Hand wash / dry</li>
+<li>Wheel cleaning</li>
+<li>Tire shine</li>
+<li>Windows</li>
+<li>Light wipe</li>
+<li>Light vacuum</li>
+</ul>
+
+<div class="price">
+Sedans $50+<br>
+SUV $60+<br>
+Trucks $70+
+</div>
+</div>
+
+<div class="card">
+<h3>STANDARD</h3>
+
+<ul>
+<li>Hand wash / dry</li>
+<li>Iron remover wheels</li>
+<li>Tire shine</li>
+<li>Hydro foam</li>
+<li>Light vacuum</li>
+</ul>
+
+<div class="price">
+Sedans $120+<br>
+SUV $130+<br>
+Trucks $150+
+</div>
+</div>
+
+<div class="card">
+<h3>PREMIUM</h3>
+
+<ul>
+<li>Everything in Standard</li>
+<li>Full vacuum</li>
+<li>Interior wipe</li>
+<li>Seats & carpet</li>
+<li>Detail brush</li>
+<li>Deep wheels</li>
+</ul>
+
+<div class="price">
+Sedans $180+<br>
+SUV $220+<br>
+Trucks $270+
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- ABOUT -->
+<div class="section container center">
+<h2>ABOUT ARVEX</h2>
+<p>
+Arvex Auto Spa is a mobile detailing and basic wash brand focused on clean presentation, direct service, and convenience.
+</p>
+</div>
+
+<!-- CONTACT -->
+<div class="section container center">
+<h2>CONTACT</h2>
+
+<p>Phone 1</p>
+<p class="red">404-397-3680</p>
+
+<p>Phone 2</p>
+<p class="red">910-214-3264</p>
+
+<a class="btn btn-red" href="tel:4043973680">Call 404-397-3680</a>
+<a class="btn btn-outline" href="https://instagram.com/ArvexAutoSpa">Instagram</a>
+
+</div>
+
+<script>
+function setLang(lang){
+if(lang==="es"){
+document.getElementById("title").innerText="ARVEX AUTO SPA";
+document.getElementById("desc").innerText="Página oficial de Arvex Auto Spa. Servicio moderno de detailing móvil y lavado básico.";
+}else{
+document.getElementById("title").innerText="ARVEX AUTO SPA";
+document.getElementById("desc").innerText="Official page for Arvex Auto Spa. Modern mobile detailing and basic wash service.";
+}
+}
+</script>
+
+</body>
+</html>
